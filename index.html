@@ -14,7 +14,7 @@
             scroll-behavior: smooth;
         }
         body {
-            background-color: #f4f4f4;
+            background-color: #fff;
             color: #333;
             text-align: center;
         }
@@ -23,7 +23,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 10%;
-            background: linear-gradient(90deg, #0d47a1, #1976d2);
+            background: #1a1a1a;
             position: fixed;
             width: 100%;
             top: 0;
@@ -32,16 +32,17 @@
         }
         header h1 {
             font-size: 24px;
+            font-weight: 600;
         }
         nav a {
-            color: #fff;
+            color: #ffcc00;
             margin: 0 15px;
             text-decoration: none;
             font-size: 18px;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #ffeb3b;
+            color: #fff;
         }
         .hero {
             height: 100vh;
@@ -54,10 +55,10 @@
             color: white;
         }
         .hero img {
-            width: 180px;
-            height: 180px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
-            border: 4px solid #ffeb3b;
+            border: 5px solid #ffcc00;
             margin-bottom: 20px;
             object-fit: cover;
         }
@@ -66,43 +67,33 @@
             text-align: left;
         }
         h2 {
-            color: #0d47a1;
-            font-size: 28px;
+            color: #1a1a1a;
+            font-size: 32px;
+            font-weight: 600;
             margin-bottom: 20px;
             text-align: center;
         }
-        .skills ul, .projects ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .projects li {
+            text-align: left;
+            margin-bottom: 20px;
         }
-        .skills li, .projects li {
-            background: white;
-            padding: 15px;
-            border-left: 5px solid #1976d2;
-            margin: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            width: 300px;
-            border-radius: 8px;
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #ffcc00;
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #e6b800;
+        }
+        .contact-info {
             text-align: center;
-        }
-        .projects a {
-            color: #0d47a1;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact p a {
-            color: #1976d2;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            padding: 20px;
-            background: #0d47a1;
-            margin-top: 40px;
-            color: white;
+            font-size: 18px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -124,32 +115,45 @@
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Data Analyst with 3+ years of experience in data visualization, statistical analysis, and business intelligence. Passionate about leveraging data to drive strategic business decisions.</p>
+        <p>I am a passionate Data Analyst with a strong background in machine learning, data visualization, and business analytics. With three years of experience, I have worked on various data-driven projects that provide valuable insights and strategic decision-making support. My expertise lies in SQL, Python, and BI tools such as Power BI and Tableau, enabling me to turn raw data into actionable intelligence. I am dedicated to solving complex business problems and driving impactful data solutions.</p>
     </section>
     
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python & Machine Learning</li>
-            <li>Data Visualization (Tableau, Streamlit, Plotly, Altair)</li>
-            <li>Statistical Analysis & Business Intelligence</li>
-            <li>Data Cleaning & Processing (Excel, Pandas)</li>
-        </ul>
+        <h2>Skills & Tools</h2>
+        <p><strong>Programming:</strong> SQL, Python, R</p>
+        <p><strong>BI & Analytics:</strong> A/B Testing, Predictive Modeling, Online Experimentation</p>
+        <p><strong>Visualization:</strong> Power BI, Tableau, Excel (VBA, Macros)</p>
+        <p><strong>Cloud & Big Data:</strong> Microsoft Azure, Databricks, ETL Pipelines</p>
+        <p><strong>Soft Skills:</strong> Communication, Collaboration, Stakeholder Management, Decision-making, Prioritization</p>
+        <p><strong>Additional Expertise:</strong> Business Strategy, Metrics Development, Product Roadmaps, Operations Research</p>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Brain Tumor Detector:</strong> Web application using ML for MRI classification. <a href="https://priyankajagota-final-zoom-app-qsipvj.streamlit.app/" target="_blank">View Project</a></li>
-            <li><strong>Canada Automobiles Sales Dashboard:</strong> Interactive dashboard for automobile insights. <a href="https://automobile.streamlit.app/" target="_blank">View Project</a></li>
-            <li><strong>Bank of Canada Interest Rates Dashboard:</strong> Tableau analysis of interest rates over 5 years. <a href="https://public.tableau.com/views/BankOfCanada/BankOfCanadaInterestRate" target="_blank">View Project</a></li>
+            <li>
+                <strong>Brain Tumor Detector:</strong> A web application that classifies MRI images into categories: Glioma tumor, Meningioma tumor, Pituitary tumor, and No tumor, using EfficientNet B0.
+                <br>
+                <a href="#" target="_blank" class="btn">View Project</a>
+            </li>
+            <li>
+                <strong>Canada Automobiles Sales Dashboard for 2024:</strong> A dashboard showcasing monthly automobile sales across Canadian provinces, using Python, Excel, and Streamlit.
+                <br>
+                <a href="#" target="_blank" class="btn">View Project</a>
+            </li>
+            <li>
+                <strong>Bank Of Canada Interest Rates Dashboard:</strong> A Tableau-based dashboard illustrating trends in various interest rates of the Bank of Canada over five years.
+                <br>
+                <a href="#" target="_blank" class="btn">View Project</a>
+            </li>
         </ul>
     </section>
-    
-    <section id="contact">
+     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:[Your Email]">[Your Email]</a></p>
-        <p>LinkedIn: <a href="[Your LinkedIn]" target="_blank">LinkedIn</a></p>
+        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>Phone: +1234567890</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
     </section>
     
     <footer>
